@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Bci Personas - Banco Bci</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/libs/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/libs/modernizr-2.8.3.min.js"></script>
+  
+</head>
+
+<body>
+<header class="header">
+  <div class="header__container">
+
+      <div class="header__link header__link--principal">
+          <a href="index.html" title="Volver al Inicio">
+              <h1 class="header__titulo">Banco Cr&eacute;dito e Inversiones</h1>
+              <img class="header__logo" src="images/Bci_personas.svg" alt="Logo Banco Crédito e Inversiones" width="190">
+          </a>
+      </div>
+
+      <nav class="nav__principal" role="navigation">
+        <!-- Menu Responsive -->
+          <a href="#" class="icono menu">
+            <span class="lineas"></span>
+            <span class="lineas"></span>
+            <span class="lineas"></span>
+          </a>
+          <a href="#" class="icono cerrar"></a>
+
+          <div class="nav__principal--main">
+
+              <div class="sesion__content">
+                  <span class="llamar"><i class="fa fa-phone"></i>600 842 42 42</span>
+                  <span class="buscar"><a href="#"><i class="fa fa-search"></i></a></span>
+                  <span class="cerrar"><a href="#">Cerrar sesi&oacute;n</a></span>
+              </div>
+
+              <div class="header__info--user">
+                <img src="images/user.png" class="user--picture" alt="Avatar usuario">
+                  <div class="user--data">
+                    <p>Bienvenido:</p> 
+                    <h2>Pablo Monares</h2>
+                    <h3>&Uacute;ltimo acceso <span id="fecha"></span></h3>
+                  </div>
+              </div>
+
+              <div class="nav__info">
+                <ul>
+                    <li><i class="fa fa-exclamation-triangle"></i>Canales de Atención</li>
+                    <li><i class="fa fa-comments"></i>Servicio al Cliente</li>
+                </ul>
+              </div>
+
+              <ul class="nav__principal--content">
+                  <li class="nav__principal--item"><a href="index.html" title="Ir a Mi Banco" >Mi Banco</a></li>
+                  <li class="nav__principal--item"><a href="#" title="Pagos y Servicios">Pagos y Servicios</a></li>
+                  <li class="nav__principal--item"><a href="transferencias.html" title="Transferencias" class="active">Transferencias</a></li>
+                  <li class="nav__principal--item"><a href="#" title="Tarjetas de Crédito">Tarjetas de Cr&eacute;dito</a></li>
+                  <li class="nav__principal--item"><a href="#" title="Crédito">Cr&eacute;dito</a></li>
+                  <li class="nav__principal--item"><a href="#" title="Inversiones">Inversiones</a></li>
+                  <li class="nav__principal--item"><a href="#" title="Seguros">Seguros</a></li>
+              </ul>
+
+          </div><!-- /Navegacion-->
+      </nav>
+  </div>
+</header>
+
+  <nav class="nav__secundario" role="navigation">
+      <ul class="nav__secundario--menu animated">
+          <li class="nav__secundario-item">
+              <input type="checkbox" name ="listaA" id="listaA">
+              <label class="active" for="listaA">transferencias</label>
+          </li>
+          <li class="nav__secundario-item">
+              <input type="checkbox" name ="ListaB" id="ListaB" >
+              <label for="ListaB">Regalo virtual</label>
+          </li>
+          <li class="nav__secundario-item">
+              <input type="checkbox" name ="ListaC" id="ListaC" >
+              <label for="ListaC">Cartola transferencias</label>
+          </li>
+      </ul> 
+  </nav>
+
+<!-- ScrollNavHorizontal-->  
+      <div class="nav-scroll">
+          <nav class="menu-scroll menu-scroll--horizontal">
+              <ul class="menu">
+                  <li><a href="#" class="active">transferencias</a></li>
+                  <li><a href="#">Regalo virtual</a></li>
+                  <li><a href="#">Cartola transferencias</a></li>
+              </ul>
+          </nav>
+      </div>
+
+<div class="main">
+  
+       <section class="side__contenido">
+          <h2 class="main__titulo">Transferencias</h2>
+
+          <article class="box__content--transferencia">
+          <!-- Contenido Left-->
+              <div class="box-transferencia left">
+                  <div>
+                      <h3>Origen</h3>
+                      <input class="input" type="text" placeholder="Cuenta Corriente Nº27145627"/>    
+                  </div> 
+                  <div>
+                      <h3>Destinatario</h3>
+                      <input class="input" type="text" placeholder="Buscar por nombre o Nº cuenta"/>
+                  </div> 
+                  <div>
+                      <h3>Monto</h3>
+                      <input class="input" type="text" placeholder="Ingrese monto a transferir"/>
+                      
+                      <div class="box-checkbox">
+                          <input id="check" type="checkbox">
+                          <label for="check">Mensaje</label>
+                      </div>
+                      <input class="input boxMensaje" type="text" placeholder="Ingrese mensaje"/>
+                      <p class="mensaje">0/60</p>
+
+                  </div> 
+
+                  <div class="box-buttons">
+                     <button class="btn btn-aceptar">aceptar</button>
+                     <button class="btn btn-cancelar">cancelar</button>
+                  </div>
+              </div>
+
+          <!-- Contenido Right -->
+              <div class="box-transferencia right">
+                  <div class="saldoTransferencia">
+                      <p>Saldo Disponible</p>
+                          <span>$198.300</span>
+                  </div> 
+                  <div>
+                      <span><a href="#">+ Agregar Destinatario</a></span>
+                  </div> 
+              </div>
+          </article>
+      </section>
+
+
+</div>
+
+  <!--  JS-->
+  <script src="js/libs/jquery-1.12.0.min.js"></script>
+  <script src="js/libs/moment-with-locales.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
